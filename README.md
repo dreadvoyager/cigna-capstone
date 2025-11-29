@@ -39,13 +39,13 @@ npm install
 
 1. **Backend URL**: Update the API base URL in `src/config/api.js`:
    ```javascript
-   const API_BASE_URL = 'http://localhost:5000/api';
+   const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
    ```
 
-2. **Environment Variables** (optional):
+2. **Environment Variables** :
    Create a `.env` file:
    ```
-   VITE_API_BASE_URL=http://localhost:5000/api
+   VITE_API_BASE_URL=http://localhost:7058/api
    ```
 
 ## Development
